@@ -20,7 +20,7 @@ public class Action3
 		Actions a = new Actions(driver);
 		WebElement move = driver.findElement(By.xpath("//a[@id='nav-link-accountList']"));
 		
-		System.out.print("Maven Practice");
+		System.err.print("Maven Practice");
 		
 		//Entering Hello in text box and then selecting it
 		a.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hello").doubleClick().build().perform();
